@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Guyub Coffee Space</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#ffd600;
+  --dark:#111;
+  --light:#fff9c4;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f5f5f5;color:#000}
+
+/* NAVBAR */
+nav{
+  background:#000;
+  color:#fff;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+nav h1{font-size:22px;color:var(--primary)}
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+  height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+.hero h2{font-size:42px;font-weight:700}
+.hero p{margin:15px 0;font-size:16px}
+.hero a{
+  background:var(--primary);
+  padding:14px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  color:#000;
+  font-weight:600;
+}
+
+/* SECTION */
+section{padding:80px 20px}
+.container{max-width:9000px;margin:auto}
+.title{text-align:center;margin-bottom:40px}
+.title h3{font-size:28px}
+.title p{opacity:.7}
+
+/* ABOUT */
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+.about img{width:100%;border-radius:20px}
+
+/* MENU */
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+.menu-card{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+.menu-card h4{margin-bottom:10px}
+.menu-card span{font-weight:600;color:#444}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+.gallery img{width:100%;border-radius:15px}
+
+/* CTA */
+.cta{
+  background:#000;
+  color:white;
+  text-align:center;
+  border-radius:3px;
+}
+.cta a{
+  display:inline-block;
+  margin-top:20px;
+  background:var(--primary);
+  color:#000;
+  padding:15px 40px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  color:white;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+}
+
+@media(max-width:768px){
+  .about{grid-template-columns:1fr}
+  .hero h2{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <h1>Guyub Coffee</h1>
+  <div>
+    <a href="#about">Tentang</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Galeri</a>
+    <a href="#contact">Kontak</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h2>Ngopi, Cerita, dan Kebersamaan</h2>
+    <p>Ruang kopi yang hangat untuk semua cerita</p>
+    <a href="#menu">Lihat Menu</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <img src="file:///C:/Users/Thinkpad/Downloads/download.png">
+    <div>
+      <h3>Tentang Guyub</h3>
+      <p>Guyub Coffee Space adalah tempat berkumpul, berbagi cerita, dan menikmati kopi terbaik dengan suasana yang hangat dan nyaman.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="container">
+    <div class="title">
+      <h3>Menu Guyub</h3>
+      <p>Lihat daftar menu lengkap kami</p>
+    </div>
+    <div class="menu-image-wrapper">
+      <img src="C:\Users\Thinkpad\Documents\guyub menu .jpeg" alt="Menu Guyub Coffee" class="menu-image">
+    </div>
+  </div>
+</section>
+
+<style>
+.menu-image-wrapper{
+  background:white;
+  padding:20px;
+  border-radius:25px;
+  box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+.menu-image{
+  width:100%;
+  border-radius:20px;
+}
+</style>
+
+<section id="gallery">
+  <div class="container">
+    <div class="title"><h3>Galeri</h3></div>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31">
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="container">
+    <h3>Kunjungi Guyub Coffee Space</h3>
+    <p>Ikuti kami di Instagram atau temukan lokasi kami</p>
+    <a href="https://www.instagram.com/guyub.cs" target="_blank">Instagram</a>
+    <a href="https://maps.app.goo.gl/zUJbETnG88tsaMUCA" target="_blank">GoogleMaps</a>
+  </div>
+</section>
+
+<footer>
+  © 2024 Guyub Coffee Space
+</footer>
+
+</body>
+</html>
